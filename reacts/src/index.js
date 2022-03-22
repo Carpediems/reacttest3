@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Button from '@material-ui/core/Button';   // 导入Button组件
 import Clock from "./Clock";
+import Assembly from './Assembly'
 // function Clock(propes){
 //     return(
 //         <div>
@@ -134,40 +135,48 @@ reportWebVitals();
 // )
 
 // state与props
-export default class Name extends React.Component{
-    render(){
-        return(
-            <div>
-                <h1>{this.props.name}</h1>
-            </div>
-        )
-    }
-}
-export default class url extends React.Component{
-    render(){
-        return(
-            <div>
-                <h2>{this.props.url}</h2>
-            </div>
-        )
-    }
-}
+// export default class Name extends React.Component{
+//     render(){
+//         return(
+//             <div>
+//                 <h1>{this.props.name}</h1>
+//             </div>
+//         )
+//     }
+// }
+// export default class url extends React.Component{
+//     render(){
+//         return(
+//             <div>
+//                 <h2>{this.props.url}</h2>
+//             </div>
+//         )
+//     }
+// }
+//
+// export default class Stateprops extends React.Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             name:'菜鸟',
+//             url:'www.cainiao'
+//         }
+//     }
+//     render(){
+//         return(
+//             <div>
+//                 <Name name={this.state.name}></Name>
+//                 <url url={this.state.url}></url>
+//             </div>
+//         );
+//     }
+// }
 
-export default class Stateprops extends React.Component{
-    constructor(){
-        super();
-        this.state={
-            name:'菜鸟',
-            url:'www.cainiao'
-        }
-    }
-    render(){
-        return(
-            <div>
-                <Name name={this.state.name}></Name>
-                <url url={this.state.url}></url>
-            </div>
-        );
-    }
-}
 
+
+const element=<Assembly></Assembly>
+const elements=<message></message>
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+)
