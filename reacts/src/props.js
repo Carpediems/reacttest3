@@ -38,3 +38,14 @@ export class Url extends React.Component{
         )
     }
 }
+
+
+export class MyTitle extends React.Component{
+    render(){
+        return(
+            <div>
+                <h1>{this.props.title}</h1>
+            </div>
+        )
+    }
+}

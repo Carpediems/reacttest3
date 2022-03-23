@@ -6,8 +6,10 @@ import {
     Props,
     PropsDefault,
     Name,
-    Url
+    Url,
+    MyTitle
 } from "./props";
+import  PropTypes  from  'prop-types'
 // 第三方组件
 
 // state 状态
@@ -56,3 +58,13 @@ ReactDOM.render(
     Name_Url_type,
     document.getElementById('root')
 )
+// Props 验证
+const title=123
+MyTitle.propTypes ={
+    title:PropTypes.string
+}
+ReactDOM.render(
+    <MyTitle title={title}></MyTitle>,
+    document.getElementById('root')
+)
+
